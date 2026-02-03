@@ -1,0 +1,150 @@
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  padding: var(--spacing-2xl) 0;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: center;
+}
+
+.about-image {
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: var(--color-bg);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.about-info .heading-1 {
+  margin: 0;
+}
+
+.about-statement {
+  padding: var(--spacing-lg);
+  background: var(--color-bg);
+  border-left: 2px solid var(--color-dark-gray);
+}
+
+.about-statement p {
+  font-size: var(--font-size-large);
+  line-height: 1.8;
+  color: var(--color-dark-gray);
+  margin: 0;
+  font-weight: 500;
+}
+
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.about-bio p {
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.about-contact {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.about-contact h3 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-dark-gray);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.contact-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.contact-links a {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-gray);
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.contact-links a:hover {
+  color: var(--color-dark-gray);
+  border-bottom-color: var(--color-dark-gray);
+}
+
+.about-cta {
+  padding-top: var(--spacing-lg);
+}
+
+.cta-link {
+  display: inline-block;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-dark-gray);
+  transition: all 0.2s ease;
+  padding: var(--spacing-md) 0;
+}
+
+.cta-link:hover {
+  transform: translateX(4px);
+}
+
+@media (max-width: 968px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .about-layout {
+    gap: var(--spacing-xl);
+  }
+
+  .about-info {
+    gap: var(--spacing-md);
+  }
+
+  .about-statement p {
+    font-size: var(--font-size-base);
+  }
+
+  .about-bio p {
+    font-size: 14px;
+  }
+
+  .contact-links {
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+}

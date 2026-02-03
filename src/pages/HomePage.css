@@ -1,0 +1,350 @@
+.home-page {
+  min-height: 100vh;
+}
+
+/* Carousel Hero Section */
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-black);
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slides {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  height: 100%;
+  aspect-ratio: 9 / 16;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Carousel Content */
+.carousel-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: var(--color-white);
+  max-width: 700px;
+  padding: 0 var(--spacing-md);
+  pointer-events: none;
+}
+
+.carousel-content .heading-1 {
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--color-white);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  font-size: 56px;
+  animation: slideUp 0.8s ease-out;
+}
+
+.carousel-content .text-subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 20px;
+  line-height: 1.8;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-white);
+  border: none;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-weight: 300;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.carousel-prev {
+  left: var(--spacing-lg);
+}
+
+.carousel-next {
+  right: var(--spacing-lg);
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: var(--spacing-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.dot.active {
+  background: rgba(255, 255, 255, 0.9);
+  width: 28px;
+  border-radius: 6px;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Featured Preview Section */
+.featured-preview {
+  border-top: 1px solid var(--color-light-gray);
+  border-bottom: 1px solid var(--color-light-gray);
+  padding: var(--spacing-2xl) 0;
+}
+
+.preview-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.preview-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.preview-header-section .heading-2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header-divider {
+  width: 50px;
+  height: 2px;
+  background: var(--color-dark-gray);
+}
+
+.view-all-link {
+  display: inline-block;
+  color: var(--color-dark-gray);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  width: fit-content;
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-dark-gray);
+}
+
+.view-all-link:hover {
+  padding-left: 8px;
+}
+
+.section-description {
+  color: var(--color-gray);
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: var(--spacing-2xl) 0;
+  background: var(--color-bg);
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  max-width: 700px;
+}
+
+.cta-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cta-header .heading-2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.cta-divider {
+  width: 50px;
+  height: 2px;
+  background: var(--color-dark-gray);
+}
+
+.cta-text {
+  font-size: var(--font-size-base);
+  line-height: 1.8;
+  color: var(--color-gray);
+  margin: 0;
+}
+
+.cta-button {
+  display: inline-flex;
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--color-dark-gray);
+  color: var(--color-white);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  width: fit-content;
+  border-radius: 2px;
+  border: none;
+}
+
+.cta-button:hover {
+  background: var(--color-black);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 968px) {
+  .preview-header {
+    flex-direction: column;
+  }
+
+  .view-all-link {
+    padding-top: 0;
+  }
+
+  .carousel-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+  }
+
+  .carousel-prev {
+    left: var(--spacing-md);
+  }
+
+  .carousel-next {
+    right: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel {
+    height: 80vh;
+  }
+
+  .carousel-content .heading-1 {
+    font-size: 36px;
+  }
+
+  .carousel-content .text-subtitle {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .carousel-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 28px;
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .carousel-prev {
+    left: var(--spacing-sm);
+  }
+
+  .carousel-next {
+    right: var(--spacing-sm);
+  }
+
+  .carousel-dots {
+    bottom: var(--spacing-md);
+    gap: 8px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dot.active {
+    width: 24px;
+  }
+
+  .featured-preview {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .cta-section {
+    padding: var(--spacing-xl) 0;
+  }
+}

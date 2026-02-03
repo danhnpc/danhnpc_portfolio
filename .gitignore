@@ -1,0 +1,7 @@
+_bmad/*
+_bmad-output/*
+.claude/*
+.cursor/*
+.gemini/*
+node_modules/*
+dist/*
