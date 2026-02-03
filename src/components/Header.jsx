@@ -11,6 +11,7 @@ export default function Header() {
       <div className="container">
         <div className="header-content">
           <Link to="/" className="logo">
+            <img src="/images/wibu.png" alt="Profile" className="logo-image" />
             <h1>Photography</h1>
           </Link>
           <nav className="nav">

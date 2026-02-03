@@ -20,6 +20,21 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  gap: 12px;
+}
+
+.logo-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .logo h1 {
@@ -78,6 +93,15 @@
 
   .header-content {
     gap: var(--spacing-md);
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logo-image {
+    width: 36px;
+    height: 36px;
   }
 
   .logo h1 {
