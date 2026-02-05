@@ -43,11 +43,11 @@ export default function Contact() {
             <div className="contact-details">
               <div className="detail-item">
                 <span className="label">Email</span>
-                <a href="mailto:your@email.com">your@email.com</a>
+                <a href="mailto:danhnpc2000@gmail.com">danhnpc2000@gmail.com</a>
               </div>
               <div className="detail-item">
                 <span className="label">Phone</span>
-                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <a href="tel:+84979399749">+84 (979) 399-749</a>
               </div>
               <div className="detail-item">
                 <span className="label">Location</span>

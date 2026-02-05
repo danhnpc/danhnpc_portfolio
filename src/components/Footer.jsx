@@ -26,9 +26,10 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Connect</h4>
             <div className="footer-links">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href="https://zalo.me" target="_blank" rel="noopener noreferrer">Zalo</a>
-              <a href="mailto:your.email@example.com">Email</a>
+              <a href="https://www.instagram.com/czanhnp_sw/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://zalo.me/0979399749" target="_blank" rel="noopener noreferrer">Zalo</a>
+              <a href="mailto:danhnpc2000@gmail.com?subject=Liên hệ từ website
+&body=Chào bạn, mình muốn hỏi về...">Email</a>
             </div>
           </div>
         </div>

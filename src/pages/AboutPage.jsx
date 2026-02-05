@@ -27,16 +27,16 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="about-contact">
+              {/* <div className="about-contact">
                 <h3>Get In Touch</h3>
                 <div className="contact-links">
                   <a href="mailto:your.email@example.com">Email</a>
                   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
                   <a href="https://zalo.me" target="_blank" rel="noopener noreferrer">Zalo</a>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="about-cta">
+              <div className="about-contact">
                 <Link to="/portfolio" className="cta-link">View Portfolio →</Link>
               </div>
             </div>

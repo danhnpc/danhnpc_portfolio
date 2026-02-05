@@ -43,24 +43,24 @@ export default function ContactPage() {
               <div className="contact-details">
                 <div className="detail-item">
                   <span className="detail-label">Email</span>
-                  <a href="mailto:your.email@example.com">your.email@example.com</a>
+                  <a href="mailto:danhnpc2000@gmail.com">danhnpc2000@gmail.com</a>
                 </div>
 
                 <div className="detail-item">
                   <span className="detail-label">Phone</span>
-                  <a href="tel:+84123456789">+84 (123) 456-789</a>
+                  <a href="tel:+84979399749">+84 (979) 399-749</a>
                 </div>
 
                 <div className="detail-item">
                   <span className="detail-label">Location</span>
-                  <p>Your City, Vietnam</p>
+                  <p>Ho Chi Minh City, Vietnam</p>
                 </div>
 
                 <div className="detail-item">
                   <span className="detail-label">Social</span>
                   <div className="social-links">
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                    <a href="https://zalo.me" target="_blank" rel="noopener noreferrer">Zalo</a>
+                    <a href="https://www.instagram.com/czanhnp_sw/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://zalo.me/0979399749" target="_blank" rel="noopener noreferrer">Zalo</a>
                   </div>
                 </div>
               </div>
